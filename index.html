@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nothing to see here</title>
+
+        <style>
+            img {
+                width: 475px;
+                height: auto;
+            }
+
+            h1 {
+                color: purple;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>This website does not exist</h1>
+        <p>This text is fake</p>
+
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmjSOPjDNLt1s-K5JfswAoO0fTTmOAbjoWWZWlkvlFMYeP1vDXDHK8EpFedslwaSY5uDw3powjIqxwWtMDknmAP3sHM5uBW4IKjQswrA">
+
+        <blockquote>"THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER..." - Some insane person from the Stanely Parable</blockquote>
+        <button onclick="changeQuote()">Change Quote</button>
+
+        <script>
+            var index = 0;
+
+            function changeQuote() {
+                var quotes = [
+                    `"Greetings. I am Chara. Thank you. Your power has awakened me from death." - Chara`,
+                    `"Reality is an illusion, the universe is a hologram, buy gold BYEEEE!!" - Bill Cipher`,
+                    `"Human... I remember you're genocides." - Sans`,
+                    `"THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER..." - Some insane person from the Stanely Parable`,
+                    `":3" -Jack`
+                ];
+
+                var blockquote = document.querySelector("blockquote");
+                blockquote.innerHTML = quotes[index];
+
+                index++;
+                if (index >= 5) {
+                    index = 0;
+                }
+            }
+        </script>
+    </body>
+</html>
